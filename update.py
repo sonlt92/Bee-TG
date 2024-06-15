@@ -15,7 +15,7 @@ basicConfig(
 )
 load_dotenv('config.env', override=True)
 
-UPSTREAM_REPO = getenv('UPSTREAM_REPO', "https://github.com/sonlt92/Telegram-Stream")
+UPSTREAM_REPO = getenv('UPSTREAM_REPO', "https://github.com/sonlt92/Bee-TG")
 UPSTREAM_BRANCH = getenv('UPSTREAM_BRANCH', "main")
 
 if UPSTREAM_REPO is not None:
@@ -24,7 +24,7 @@ if UPSTREAM_REPO is not None:
         
     update = srun([f"git init -q \
                      && git config --global user.email ltson@beegadget.net \
-                     && git config --global user.name SonLT \
+                     && git config --global user.name SonLT aka Jacky Ryuk \
                      && git add . \
                      && git commit -sm update -q \
                      && git remote add origin {UPSTREAM_REPO} \
